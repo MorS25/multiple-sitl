@@ -136,7 +136,7 @@ opts[:num].times do |i|
         mkdir_p "rootfs/eeprom"
         touch "rootfs/eeprom/parameters"
 
-        cp wrk_dir+"Firmware/ROMFS/px4fmu_common/mixers/quad_w.main.mix", "./"
+        cp wrk_dir+"Firmware/ROMFS/px4fmu_common/mixers/quad_dc.main.mix", "./"
 
         #generate rc file
         rc1 ||= File.read(wrk_dir + rc_script)
